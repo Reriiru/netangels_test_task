@@ -1,0 +1,22 @@
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+  
+    <input type=submit value="submit" />
+</form>
+
+<ol>
+    {% for url in urls %}
+        <li>
+            <a href="http://{{ request.META.HTTP_HOST }}/r/{{ url.shortened_uri }}">
+                http://{{ request.META.HTTP_HOST }}/r/{{ url.shortened_uri }}
+            </a>
+        </li>
+    {% endfor %}
+</ol>
+
+<span>                    
+        <a href="http://{{ request.META.HTTP_HOST }}/popular">
+            To Popular
+        </a>
+</span>

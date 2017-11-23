@@ -1,0 +1,11 @@
+<h1>Your URL is: http://{{ request.META.HTTP_HOST }}/r/{{ object.shortened_uri }}</h1> 
+
+<p> Created at: {{ object.creation_date }} </p>
+<p> Hits: {{ object.hits }} </p>
+<p> Original url: {{ object.original_url }}</p>
+
+<span>                    
+        <a href="http://{{ request.META.HTTP_HOST }}/">
+            To Index
+        </a>
+</span>

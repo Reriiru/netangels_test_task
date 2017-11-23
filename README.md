@@ -1,4 +1,4 @@
-##To run:
+## To run:
 1. Create db and user, put in password.
 2. pip install -r requirements.txt
 3. python ./test_task/manage.py makemigration test\_task\_app
